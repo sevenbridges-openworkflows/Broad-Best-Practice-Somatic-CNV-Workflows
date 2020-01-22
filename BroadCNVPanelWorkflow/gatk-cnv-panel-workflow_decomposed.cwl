@@ -1,13 +1,5 @@
-dct:creator:
-"@id": "sbg"
-foaf:name: SevenBridges
-foaf:mbox: "mailto:support@sbgenomics.com"
- 
- 
 $namespaces:
-sbg: https://sevenbridges.com
-dct: http://purl.org/dc/terms/
-foaf: http://xmlns.com/foaf/0.1/
+  sbg: https://sevenbridges.com
 class: Workflow
 cwlVersion: v1.0
 doc: "BROAD Best Practices Somatic CNV Panel is used for creating a panel of normals\
@@ -771,6 +763,6 @@ steps:
     label: GATK PreprocessIntervals
     out:
     - id: out_intervals
-    run: steps/_1_gatk_preprocessintervals_4_1_0_0.cwl
+    run: steps/gatk_preprocessintervals_4_1_0_0.cwl
     sbg:x: -118.88700866699219
     sbg:y: 44.949153900146484
