@@ -11,7 +11,7 @@ The reference used must be the same between PON and case samples.
 
 Common Use Cases
 
-1. Somatic CNV Panel Workflow:
+# Somatic CNV Panel Workflow:
 
 For CNV discovery, the PON is created by running the initial coverage collection tools individually on a set of normal samples and combining the resulting copy ratio data using a dedicated PON creation tool. This produces a binary file that can be used as a PON. It is very important to use normal samples that are as technically similar as possible to the tumor samples (same exome or genome preparation methods, sequencing technology etc.).
 
@@ -19,7 +19,7 @@ The basis of copy number variant detection is formed by collecting coverage coun
 
 In creating a PON, CreateReadCountPanelOfNormals abstracts the counts data for the samples and the intervals using Singular Value Decomposition (SVD), a type of Principal Component Analysis. The normal samples in the PON should match the sequencing approach of the case sample under scrutiny. This applies especially to targeted exome data because the capture step introduces target-specific noise.
 
-2. Somatic CNV Pair Workflow:
+# Somatic CNV Pair Workflow:
 
 The workflow denoises case sample alignment data against a panel of normals (PON), created by GATK CNV Panel Workflow, to obtain copy ratios and models segments from the copy ratios and allelic counts. The latter modeling incorporates data from a matched control sample. The same workflow steps apply to targeted exome and whole genome sequencing data.
 
