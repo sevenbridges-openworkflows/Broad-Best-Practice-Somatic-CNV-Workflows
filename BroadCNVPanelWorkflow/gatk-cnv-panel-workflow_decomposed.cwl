@@ -1,5 +1,11 @@
+dct:creator:
+  "@id": "sbg"
+  foaf:name: SevenBridges
+  foaf:mbox: "mailto:support@sbgenomics.com"
 $namespaces:
   sbg: https://sevenbridges.com
+  dct: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
 class: Workflow
 cwlVersion: v1.0
 doc: "BROAD Best Practices Somatic CNV Panel is used for creating a panel of normals\
